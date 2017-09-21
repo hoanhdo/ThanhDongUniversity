@@ -1,0 +1,32 @@
+note:
+
+- Phần web cần có thêm tìm hiểu về web api
+- Quy trình xử lý trang ASP.NET cần có thêm asp.net life cycle
+http://www.oktot.com/vongdoitrangasp/
+http://asp-translate.blogspot.com/2016/01/tong-quan-vong-oi-cua-trang-asp.html
+
+use case
+
+
+
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/getting-started-with-aspnet-web-api/using-web-api-with-aspnet-web-forms
+https://toidicodedao.com/2016/05/31/huong-dan-viet-chat-bot-cho-facebook-phan-1-kien-thuc-co-ban-co-che-hoat-dong/
+http://www.girliemac.com/blog/2017/01/06/facebook-apiai-bot-nodejs/
+
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api
+
+
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
+
+https://github.com/eternaltung/MessengerBot-WebAPI/tree/master/MessengerBot
+http://aihelpwebsite.com/Blog/EntryId/6/Creating-a-Hello-World-Bot-Using-The-Microsoft-Bot-Framework
+https://www.codeproject.com/Articles/1110201/Creating-A-Facebook-Bot-Using-Microsoft-Bot-Framew
+
+
+https://dzone.com/articles/how-to-build-a-facebook-messenger-chatbot-in-10-mi-1
+
+deploy
+http://www.c-sharpcorner.com/UploadFile/3d39b4/publish-and-host-Asp-Net-web-api/
+
+
+EAABq4gZAin0MBANaVUwQFhGsk7uVbEfeYPz0IvHO1wBLxieOn3arudmSU9oFmZBPQ23v6mTTy88PaA312YG7UDVW1Gr0Yj9nlhZCKf6WxMsrZAGp7U9UNCxZAr7IgrjWYZAtdioAohW1nsuutFMFKgPNmWu68PK3nV1pEfg4BAZAeQjZB5OZANOKt

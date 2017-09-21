@@ -1,0 +1,105 @@
+http://www.azurefromthetrenches.com/how-to-using-facebook-to-authenticate-with-web-api-2-in-a-native-mobile-application/
+
+https://theonetechnologies.com/blog/post/aspnet-login-with-facebook-and-graph-api
+
+https://forums.asp.net/t/2023834.aspx?POst+on+wall+using+Facebook+API+and+Facebook+login+authentication
+
+https://www.aspsnippets.com/Articles/Login-with-FaceBook-account-in-ASPNet-Website.aspx
+
+https://blogs.msdn.microsoft.com/nickpinheiro/2015/02/28/facebook-login-with-asp-net-web-forms/
+
+
+
+post a post : https://www.codeproject.com/Articles/569920/Publish-a-post-on -Facebook-wall-using-Graph-API
+post a image 
+
+so sánh .net webform và winform
+https://msdn.microsoft.com/en-us/library/5t6z562c(v=vs.90).aspx
+
+so sánh bảo mật của .net framework
+https://msdn.microsoft.com/en-us/library/fkytk30f(v=vs.100).aspx
+https://msdn.microsoft.com/en-us/library/aa720329(v=vs.71).aspx
+
+api là gì
+https://dammecode.wordpress.com/2017/01/18/api-la-gi/
+
+
+https://github.com/sohaibilyas/facebook-php-sdk-v5/blob/master/get-list-of-friends-names.php
+
+https://www.youtube.com/watch?v=xt-ZRuAVekU
+
+
+https://developers.facebook.com/tools/explorer/131687267374337?method=POST&path=1955277721422431%2Fnotifications%3Ftemplate%3D%22test%20application%22%26access_token%3D131687267374337%7CTw8EuyFl0VIwk0f2FPFR1icdTOU&version=v2.10
+
+Gửi notification chỉ giới hạn trong những người đã cài đặt app.
+Lấy ra danh sách bạn bè phần bị giới hạn các thông tin có thể lấy ra bao gồm : họ và tên, ảnh đại diện
+
+
+https://facebookapi.codeplex.com/SourceControl/latest#FacebookAPI/Objects/FacebookApplication.cs
+
+https://stackoverflow.com/questions/2724977/using-facebook-graph-to-simply-post-a-wall-message-with-just-javascript
+
+https://stackoverflow.com/questions/6765764/publish-to-wall-with-facebook-api
+
+https://stackoverflow.com/questions/34181534/facebook-error-100-a-link-must-be-provided-if-a-picture-url-is-given
+
+https://stackoverflow.com/questions/11313442/facebook-api-upload-photo-from-url
+
+http://www.masteringapi.com/tutorials/how-to-upload-a-photo-to-a-users-profile-using-facebook-graph-api/66/
+
+
+https://vedmant.com/facebook-graph-api-upload-photo-using-javascript-local-computer/
+
+https://www.aspsnippets.com/Articles/Upload-Post-Photo-Image-to-FaceBook-Wall-using-Graph-API-in-ASPNet.aspx
+https://stackoverflow.com/questions/5452192/how-to-post-photo-to-album-in-facebook-graph-api-asp-net?rq=1
+
+https://www.codeproject.com/Articles/569920/Publish-a-post-on-Facebook-wall-using-Graph-API
+
+http://webmodelling.com/webbits/socialmedia/facebook-api.aspx
+
+
+http://shahvaibhav.com/post-pictures-on-users-facebook-wall-using-facebook-c-sdk/
+
+"1955277721422431"
+
+me/invitable_friends
+me/taggable_friends
+me/friendlists
+
+
+https://forums.asp.net/t/2024993.aspx?how+to+get+facebook+friends+list+in+asp+net+
+http://www.thepcwizard.in/2013/07/sample-app-using-facebook-c-sharp-sdk.html
+
+https://www.nuget.org/packages/Facebook/7.0.6
+
+
+https://stackoverflow.com/questions/39412861/can-i-get-the-total-count-of-a-post-likes-shares-and-comments-using-facebook-sd
+https://stackoverflow.com/questions/40531833/facebook-reactions-total-count
+
+?fields=likes.limit(0).summary(true)
+
+https://developers.facebook.com/docs/graph-api/using-graph-api/
+
+
+<asp:LinkButton ID="lbLogout" CssClass="fa fa-sign-out fa-fw" OnClick="lbLogout_Click" runat="server">Logout</asp:LinkButton>
+
+<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                                <%# Eval("username") %> (<%# Eval("user_id") %>)<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#"><i class="fa fa-user fa-fw"></i>User Profile</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-gear fa-fw"></i>Settings</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                                    </li>
+                            </ul>
+                            <!-- /.dropdown-user -->
+                        </li>
+
+
+
