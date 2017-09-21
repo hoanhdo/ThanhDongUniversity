@@ -1,0 +1,6 @@
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\obj\Debug\FacebookAPI.csprojResolveAssemblyReference.cache
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\bin\FacebookAPI.dll.config
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\bin\FacebookAPI.dll
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\bin\FacebookAPI.pdb
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\obj\Debug\FacebookAPI.dll
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\obj\Debug\FacebookAPI.pdb

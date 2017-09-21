@@ -1,0 +1,16 @@
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\FacebookChatBot.dll.config
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\FacebookChatBot.dll
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\FacebookChatBot.pdb
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\Facebook.dll
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\Newtonsoft.Json.dll
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\System.Net.Http.Formatting.dll
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\System.Web.Http.dll
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\System.Web.Http.WebHost.dll
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\Facebook.xml
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\Newtonsoft.Json.xml
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\System.Net.Http.Formatting.xml
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\System.Web.Http.xml
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\System.Web.Http.WebHost.xml
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\obj\Release\FacebookChatBot.dll
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\obj\Release\FacebookChatBot.pdb
+D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\obj\Release\FacebookChatBot.csprojResolveAssemblyReference.cache

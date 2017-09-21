@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE6E405E-C15A-400D-86E6-B64200E1E150}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FacebookAPI</RootNamespace>
+    <AssemblyName>FacebookAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\assets\css\bootstrap-theme.min.css" />
+    <Content Include="Admin\assets\css\bootstrap.css" />
+    <Content Include="Admin\assets\css\custom-styles.css" />
+    <Content Include="Admin\assets\css\font-awesome.css" />
+    <Content Include="Admin\assets\font-awesome\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin\assets\img\bg-img.jpg" />
+    <Content Include="Admin\assets\js\bootstrap.min.js" />
+    <Content Include="Admin\assets\js\chart-data.js" />
+    <Content Include="Admin\assets\js\chart.min.js" />
+    <Content Include="Admin\assets\js\custom-scripts.js" />
+    <Content Include="Admin\assets\js\custom.js" />
+    <Content Include="Admin\assets\js\dataTables\dataTables.bootstrap.css" />
+    <Content Include="Admin\assets\js\dataTables\dataTables.bootstrap.js" />
+    <Content Include="Admin\assets\js\dataTables\jquery.dataTables.js" />
+    <Content Include="Admin\assets\js\easypiechart-data.js" />
+    <Content Include="Admin\assets\js\easypiechart.js" />
+    <Content Include="Admin\assets\js\jquery-1.10.2.js" />
+    <Content Include="Admin\assets\js\jquery.metisMenu.js" />
+    <Content Include="Admin\assets\js\Lightweight-Chart\chart.js" />
+    <Content Include="Admin\assets\js\Lightweight-Chart\cssCharts.css" />
+    <Content Include="Admin\assets\js\Lightweight-Chart\index - Copy.html" />
+    <Content Include="Admin\assets\js\Lightweight-Chart\index.html" />
+    <Content Include="Admin\assets\js\Lightweight-Chart\jquery.chart.js" />
+    <Content Include="Admin\assets\js\Lightweight-Chart\jquery.chart.min.js" />
+    <Content Include="Admin\assets\js\morris\morris-0.4.3.min.css" />
+    <Content Include="Admin\assets\js\morris\morris.js" />
+    <Content Include="Admin\assets\js\morris\raphael-2.1.0.min.js" />
+    <Content Include="Admin\chart.html" />
+    <Content Include="Admin\ChiaSeBaiViet.aspx" />
+    <Content Include="Admin\ChiaSeHinhAnh.aspx" />
+    <Content Include="Admin\contact\contact_me.js" />
+    <Content Include="Admin\contact\jqBootstrapValidation.js" />
+    <Content Include="Admin\empty.html" />
+    <Content Include="Admin\form.html" />
+    <Content Include="Admin\index.html" />
+    <Content Include="Admin\LayThongTinNguoiDung.aspx" />
+    <Content Include="Admin\LICENSE.txt" />
+    <Content Include="Admin\README.txt" />
+    <Content Include="Admin\tab-panel.html" />
+    <Content Include="Admin\table.html" />
+    <Content Include="Admin\ThongKe.aspx" />
+    <Content Include="Admin\ui-elements.html" />
+    <Content Include="ChiaSeBaiViet.aspx" />
+    <Content Include="ChiaSeHinhAnh.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\lato-bold-webfont.eot" />
+    <Content Include="fonts\lato-bold-webfont.ttf" />
+    <Content Include="fonts\lato-bold-webfont.woff" />
+    <Content Include="fonts\lato-bold-webfont.woff2" />
+    <Content Include="fonts\lato-light-webfont.eot" />
+    <Content Include="fonts\lato-light-webfont.ttf" />
+    <Content Include="fonts\lato-light-webfont.woff" />
+    <Content Include="fonts\lato-light-webfont.woff2" />
+    <Content Include="fonts\lato-medium-webfont.eot" />
+    <Content Include="fonts\lato-medium-webfont.ttf" />
+    <Content Include="fonts\lato-medium-webfont.woff" />
+    <Content Include="fonts\lato-medium-webfont.woff2" />
+    <Content Include="fonts\lato-regular-webfont.eot" />
+    <Content Include="fonts\lato-regular-webfont.ttf" />
+    <Content Include="fonts\lato-regular-webfont.woff" />
+    <Content Include="fonts\lato-regular-webfont.woff2" />
+    <Content Include="Admin\assets\font-awesome\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="Admin\assets\font-awesome\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="Admin\assets\font-awesome\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="Admin\assets\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Admin\assets\js\Lightweight-Chart\README.md" />
+    <Content Include="Admin\contact\contact_me.php" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\user.aspx" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="fb-login.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\lato-bold-webfont.svg" />
+    <Content Include="fonts\lato-light-webfont.svg" />
+    <Content Include="fonts\lato-medium-webfont.svg" />
+    <Content Include="fonts\lato-regular-webfont.svg" />
+    <Content Include="images\333.jpg" />
+    <Content Include="images\444.jpg" />
+    <Content Include="images\555.jpg" />
+    <Content Include="images\chia-se-bai-viet.jpg" />
+    <Content Include="images\chia-se-hinh-anh.jpg" />
+    <Content Include="images\client1.png" />
+    <Content Include="images\client2.png" />
+    <Content Include="images\client3.png" />
+    <Content Include="images\client4.png" />
+    <Content Include="images\client5.png" />
+    <Content Include="images\client8.png" />
+    <Content Include="images\clockbg.jpg" />
+    <Content Include="images\clocklanding.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\logo.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="LayThongTinNguoiDung.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChiaSeBaiViet.aspx.cs">
+      <DependentUpon>ChiaSeBaiViet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ChiaSeBaiViet.aspx.designer.cs">
+      <DependentUpon>ChiaSeBaiViet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChiaSeHinhAnh.aspx.cs">
+      <DependentUpon>ChiaSeHinhAnh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ChiaSeHinhAnh.aspx.designer.cs">
+      <DependentUpon>ChiaSeHinhAnh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LayThongTinNguoiDung.aspx.cs">
+      <DependentUpon>LayThongTinNguoiDung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LayThongTinNguoiDung.aspx.designer.cs">
+      <DependentUpon>LayThongTinNguoiDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThongKe.aspx.cs">
+      <DependentUpon>ThongKe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThongKe.aspx.designer.cs">
+      <DependentUpon>ThongKe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiaSeBaiViet.aspx.cs">
+      <DependentUpon>ChiaSeBaiViet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiaSeBaiViet.aspx.designer.cs">
+      <DependentUpon>ChiaSeBaiViet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiaSeHinhAnh.aspx.cs">
+      <DependentUpon>ChiaSeHinhAnh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiaSeHinhAnh.aspx.designer.cs">
+      <DependentUpon>ChiaSeHinhAnh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fb-login.aspx.cs">
+      <DependentUpon>fb-login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fb-login.aspx.designer.cs">
+      <DependentUpon>fb-login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LayThongTinNguoiDung.aspx.cs">
+      <DependentUpon>LayThongTinNguoiDung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LayThongTinNguoiDung.aspx.designer.cs">
+      <DependentUpon>LayThongTinNguoiDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FacebookAPI.cs" />
+    <Compile Include="Models\FacebookUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\assets\plugins\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3212</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8888</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

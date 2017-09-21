@@ -1,0 +1,11 @@
+GET /api/webhook HTTP/1.1
+Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Cookie: _ga=GA1.1.1678300374.1503586404
+Host: localhost:9999
+Referer: http://localhost:9999/index.html
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+X-Requested-With: XMLHttpRequest
+
