@@ -140,6 +140,7 @@
     <Content Include="Admin\assets\js\Lightweight-Chart\README.md" />
     <Content Include="Admin\contact\contact_me.php" />
     <Content Include="GuiThongBao.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="packages.config" />
     <Content Include="Admin\Default.Master" />
     <Content Include="Default.Master" />
@@ -292,6 +293,13 @@
     </Compile>
     <Compile Include="GuiThongBao.aspx.designer.cs">
       <DependentUpon>GuiThongBao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="LayThongTinNguoiDung.aspx.cs">
       <DependentUpon>LayThongTinNguoiDung.aspx</DependentUpon>
