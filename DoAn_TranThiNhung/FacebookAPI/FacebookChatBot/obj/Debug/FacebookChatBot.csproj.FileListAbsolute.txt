@@ -13,4 +13,3 @@ D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\System.
 D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\bin\System.Web.Http.WebHost.xml
 D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\obj\Debug\FacebookChatBot.dll
 D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\obj\Debug\FacebookChatBot.pdb
-D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookChatBot\obj\Debug\FacebookChatBot.csprojResolveAssemblyReference.cache
