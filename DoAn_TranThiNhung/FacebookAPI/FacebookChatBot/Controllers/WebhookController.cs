@@ -87,6 +87,7 @@ namespace FacebookChatBot.Controllers
             });
         }
 
+
         private JObject CreateTestResponse(string body, string convert)
         {
             return JObject.FromObject(new
@@ -104,6 +105,7 @@ namespace FacebookChatBot.Controllers
 		{
 			using (HttpClient client = new HttpClient())
 			{
+                // Gọi facebook gửi lại message cho người gửi
 				client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 				HttpResponseMessage res = await client.PostAsync("https://graph.facebook.com/v2.10/me/messages?access_token=" + page_token, new StringContent(json.ToString(), Encoding.UTF8, "application/json"));
 			}
