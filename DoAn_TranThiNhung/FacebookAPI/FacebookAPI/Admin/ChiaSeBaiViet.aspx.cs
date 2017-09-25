@@ -23,7 +23,9 @@ namespace FacebookAPI.Admin
 
         protected void btnChiaSeBaiViet_Click(object sender, EventArgs e)
         {
-            FbAPI fbapi = new FbAPI();
+            FbAPI fbapi = new FbAPI();//tạo object facebook api
+
+            //kiểm tra link chia sẻ có đúng định dạng không
             if (txtLinkChiaSe.Text != string.Empty)
             {
                 if(!Common.CheckURLValid(txtLinkChiaSe.Text)) 
@@ -32,6 +34,8 @@ namespace FacebookAPI.Admin
                     return;
                 }
             }
+
+            //kiểm tra ảnh chia sẻ có đúng định dạng không
             if (txtAnhChiaSe.Text != string.Empty)
             {
                 if (!Common.CheckURLValid(txtAnhChiaSe.Text))
@@ -41,16 +45,15 @@ namespace FacebookAPI.Admin
                 }
             }
             
+            //Chia sẻ bài viết
             bool response = fbapi.PostMessage(txtNoiDungCanChiaSe.Text, txtLinkChiaSe.Text, txtAnhChiaSe.Text, Session["token_extended"].ToString());
             if(response)
             {
-                divthongbao.Visible = true;
-                txtThongBao.Text = "Chia sẻ thành công";
-                ClearData();
+                ThongBaoThanhCong("Chia sẻ thành công");
             }
             else
             {
-
+                ThongBaoLoi("Chia sẻ không thành công");
             }
         }
 

@@ -116,6 +116,7 @@ namespace FacebookAPI.Models
         {
             try
             {
+                //tạo parameter để gọi api, nếu không có thông tin thì sẽ bỏ qua tham số
                 string post = "me/feed?" + "&access_token=" + token;
                 if (message != string.Empty)
                 {
@@ -130,9 +131,11 @@ namespace FacebookAPI.Models
                     post += "&picture=" + picture_link;
                 }
 
+                // tạo post request 
                 HttpWebRequest post_request = CreateRequest(post, WebRequestMethods.Http.Post);
-                string response = GetResponse(post_request);
-                FacebookClass.Result_Post_Id result = DeserializeJsonToObject<FacebookClass.Result_Post_Id>(response);
+                string response = GetResponse(post_request);//nhận request trả về
+                FacebookClass.Result_Post_Id result = DeserializeJsonToObject<FacebookClass.Result_Post_Id>(response);// chuyển response thành object
+                // Kiểm tra kết quả trả về
                 if (result.id != null)
                 {
                     return true;

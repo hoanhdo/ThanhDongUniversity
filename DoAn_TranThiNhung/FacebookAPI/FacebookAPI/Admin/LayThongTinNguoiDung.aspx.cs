@@ -18,12 +18,13 @@ namespace FacebookAPI.Admin
             {
                 try
                 {
-                    FacebookClient client = new FacebookClient(Session["token_extended"].ToString());
-                    var friendListData = client.Get("/me/taggable_friends");
+                    FacebookClient client = new FacebookClient(Session["token_extended"].ToString());//tạo object facebook client
+                    var friendListData = client.Get("/me/taggable_friends?limit=50"); //gọi facebook api lấy thông tin bạn bè tag được
                     JavaScriptSerializer sr = new JavaScriptSerializer();
                     FacebookClass.Taggable_Friends serializedJson = sr.Deserialize<FacebookClass.Taggable_Friends>(friendListData.ToString());
                     if (serializedJson.data != null)
-                    {
+                    {   
+                        // Lấy ra danh sách người dùng từ kết quả trả về
                         FacebookClass.User_Info[] user_infos = serializedJson.data;
                         FacebookClass.User_Info_Display[] list_user_display = new FacebookClass.User_Info_Display[user_infos.Length];
                         for (int i = 0; i < user_infos.Length; i++)
@@ -36,11 +37,12 @@ namespace FacebookAPI.Admin
                             list_user_display[i] = user_display;
                         }
                         ListView1.DataSource = list_user_display;
-                        ListView1.DataBind();
+                        ListView1.DataBind();//bind danh sách thông tin người dùng vào listview
                     }
                 }
                 catch (Exception)
                 {
+                    //Nếu không tìm thấy sẽ trả về danh sách trống
                     ListView1.DataSource = new FacebookClass.User_Info_Display[0];
                     ListView1.DataBind();
                 }
