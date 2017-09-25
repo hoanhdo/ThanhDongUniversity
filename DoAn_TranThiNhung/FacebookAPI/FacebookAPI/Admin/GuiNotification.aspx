@@ -21,7 +21,7 @@
                             Mô tả chức năng
                         </div>
                         <div class="panel-body">
-                            Mô tả chức năng
+                            Gửi thông báo đến danh sách bạn bè trên Facebook
                         </div>
                     </div>
                     <div class="panel panel-default">
@@ -46,7 +46,7 @@
                                         </div>
 
                                         <asp:Button ID="btnGuiThongBao" runat="server" Text="Thông báo" CssClass="btn btn-primary" OnClick="btnGuiThongBao_Click" />
-                                        <asp:Button ID="btnReset" runat="server" Text="Xóa nội dụng thông báo" CssClass="btn btn-danger" />
+                                        <asp:Button ID="btnReset" runat="server" Text="Xóa nội dung thông báo" CssClass="btn btn-danger" />
                                     </form>
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->

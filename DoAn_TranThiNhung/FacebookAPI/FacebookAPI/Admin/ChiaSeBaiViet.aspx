@@ -21,7 +21,7 @@
                             Mô tả chức năng
                         </div>
                         <div class="panel-body">
-                            Mô tả chức năng
+                            Chia sẻ nội dung bài viết của mình lên Facebook, danh sách bạn bè cũng nhìn thấy nội dung
                         </div>
                     </div>
                     <div class="panel panel-default">

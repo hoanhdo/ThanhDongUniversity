@@ -6,3 +6,11 @@ D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\obj\Debug\Faceb
 D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\obj\Debug\FacebookAPI.pdb
 D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\bin\Facebook.dll
 D:\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\bin\Facebook.xml
+E:\Đồ án TN 2017\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\bin\FacebookAPI.dll.config
+E:\Đồ án TN 2017\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\bin\FacebookAPI.dll
+E:\Đồ án TN 2017\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\bin\FacebookAPI.pdb
+E:\Đồ án TN 2017\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\bin\Facebook.dll
+E:\Đồ án TN 2017\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\bin\Facebook.xml
+E:\Đồ án TN 2017\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\obj\Debug\FacebookAPI.csprojResolveAssemblyReference.cache
+E:\Đồ án TN 2017\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\obj\Debug\FacebookAPI.dll
+E:\Đồ án TN 2017\ThanhDongUniversity\DoAn_TranThiNhung\FacebookAPI\FacebookAPI\obj\Debug\FacebookAPI.pdb
