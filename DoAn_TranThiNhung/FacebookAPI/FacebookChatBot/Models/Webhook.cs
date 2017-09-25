@@ -6,7 +6,7 @@ using System.Web;
 
 namespace FacebookChatBot.Models
 {
-
+    //Class model mapping với json từ faceboook messenger
     public class WebhookModel
     {
         [JsonProperty("object")]

@@ -16,8 +16,8 @@ namespace FacebookChatBot
 
         protected void Application_BeginRequest(Object Sender, EventArgs e)
         {
-            string logfile = HttpContext.Current.Server.MapPath("~/log.txt");
-            Request.SaveAs(logfile, true);
+            string logfile = HttpContext.Current.Server.MapPath("~/log.txt");//tạo đường dẫn cho file
+            Request.SaveAs(logfile, true);// lưu thông tin request xuống file 
         }
     }
 }
