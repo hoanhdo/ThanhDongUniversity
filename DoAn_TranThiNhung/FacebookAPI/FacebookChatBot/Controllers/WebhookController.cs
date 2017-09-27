@@ -26,14 +26,17 @@ namespace FacebookChatBot.Controllers
         string page_token = "EAABq4gZAin0MBACdUdH4WFLPaqywkSFfjKnwZAv5s2yZBnWh4DakoPutKhgFOjBdFDxUs5z89LUkqWt235TFVUjHZBXuR7ZA5LyfpUy2cje1Vfwdf1DLUWnt4CTvEGS2KtVmTz7JJUlLkvXC1Jh1pCS1qHcoT6FavbWxRYzKaZCKPZAAWWFqsbO";
         public HttpResponseMessage Get()
         {
+            //lấy ra dict querystring
             var querystrings = Request.GetQueryNameValuePairs().ToDictionary(x => x.Key, x => x.Value);
-            if (querystrings["hub.verify_token"] == "helloworld")
+            if (querystrings["hub.verify_token"] == "helloworld")//xác thực verify từ facebook app chat bot
             {
+                //Gửi trả về httpcode là 200
                 return new HttpResponseMessage(HttpStatusCode.OK)
                 {
                     Content = new StringContent(querystrings["hub.challenge"], Encoding.UTF8, "text/plain")
                 };
             }
+            //Gửi trả về httpcode là 401 nếu k xác thực đúng
             return new HttpResponseMessage(HttpStatusCode.Unauthorized);
         }
 
@@ -42,31 +45,32 @@ namespace FacebookChatBot.Controllers
         {
             try
             {
+                //
                 //var signature = Request.Headers.GetValues("X-Hub-Signature").FirstOrDefault().Replace("sha1=", "");
-                string body = await Request.Content.ReadAsStringAsync();
-                dynamic value = JsonConvert.DeserializeObject<WebhookModel>(body);
-                if (value._object != "page") {
-                    return new HttpResponseMessage(HttpStatusCode.OK);
+                string body = await Request.Content.ReadAsStringAsync();//đọc body của request
+                dynamic value = JsonConvert.DeserializeObject<WebhookModel>(body);// chuyển request thành object
+                if (value._object != "page") {// nếu k phải request post của facebook
+                    return new HttpResponseMessage(HttpStatusCode.OK); // gửi về http code là 200
                 }
-                foreach (var item in value.entry[0].messaging)
+                foreach (var item in value.entry[0].messaging)// duyệt qua từng phần trong message
                 {
-                    if (item.message == null && item.postback == null)
+                    if (item.message == null && item.postback == null)// kiểm tra xem có message hay không 
                         continue;
                     else
-                        await SendMessage(GetMessageTemplate(item.message.text, item.sender.id));
+                        await SendMessage(GetMessageTemplate(item.message.text, item.sender.id));// gửi message 
                 }
 
                 return new HttpResponseMessage(HttpStatusCode.OK);
             }
             catch (Exception ex)
             {
-                string fullSavePath = HttpContext.Current.Server.MapPath("~/log_error.txt");
+                string fullSavePath = HttpContext.Current.Server.MapPath("~/log_error.txt");//đường dẫn logfile
                 using (StreamWriter writer = new StreamWriter(fullSavePath, true))
                 {
-                    writer.WriteLine(ex.ToString());
+                    writer.WriteLine(ex.ToString());// ghi log xuống  file
                     writer.Close();
                 }
-                return new HttpResponseMessage(HttpStatusCode.InternalServerError);
+                return new HttpResponseMessage(HttpStatusCode.InternalServerError);// trả lại lỗi 500 internal
             }
         }
 
@@ -102,6 +106,7 @@ namespace FacebookChatBot.Controllers
 		{
 			using (HttpClient client = new HttpClient())
 			{
+                //gửi message tới người đã nhắn tin
 				client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 				HttpResponseMessage res = await client.PostAsync("https://graph.facebook.com/v2.10/me/messages?access_token=" + page_token, new StringContent(json.ToString(), Encoding.UTF8, "application/json"));
 			}
