@@ -30,7 +30,7 @@ namespace FacebookAPI
                     client_id = txtUsername.Text,
                     redirect_uri = "http://" + Request.ServerVariables["SERVER_NAME"] + ":" + Request.ServerVariables["SERVER_PORT"] + "/admin/ThongKe.aspx",
                     response_type = "code",
-                    scope = "publish_actions,user_friends,user_posts,read_custom_friendlists" // Add other permissions as needed
+                    scope = "publish_actions,user_friends,user_posts,read_custom_friendlists,pages_show_list,manage_pages" // Add other permissions as needed
                 });// Thông tin đường link xác thực facebook bao gồm client_id, link sẽ redirect về, và các quyền của app
                 Session["app_id"] = txtUsername.Text;// gắn app id vào session để sử dụng 
                 Session["app_secret"] = txtPassword.Text; //gắn app secret vào session để sử dụng
