@@ -91,6 +91,7 @@
     <Content Include="Admin\assets\js\morris\raphael-2.1.0.min.js" />
     <Content Include="Admin\ChiaSeBaiViet.aspx" />
     <Content Include="Admin\ChiaSeHinhAnh.aspx" />
+    <Content Include="Admin\ChiaSeVideo.aspx" />
     <Content Include="Admin\contact\contact_me.js" />
     <Content Include="Admin\contact\jqBootstrapValidation.js" />
     <Content Include="Admin\GuiNotification.aspx" />
@@ -207,6 +208,13 @@
     <Compile Include="Admin\ChiaSeHinhAnh.aspx.designer.cs">
       <DependentUpon>ChiaSeHinhAnh.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\ChiaSeVideo.aspx.cs">
+      <DependentUpon>ChiaSeVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ChiaSeVideo.aspx.designer.cs">
+      <DependentUpon>ChiaSeVideo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -298,6 +306,7 @@
   <ItemGroup>
     <Folder Include="Admin\assets\plugins\" />
     <Folder Include="upload_photos\" />
+    <Folder Include="upload_videos\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
