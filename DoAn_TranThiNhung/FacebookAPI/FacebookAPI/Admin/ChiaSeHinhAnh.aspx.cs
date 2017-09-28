@@ -71,6 +71,7 @@ namespace FacebookAPI.Admin
                     {
                         if (result.id != null && result.post_id != null)
                         {
+                            ClearData();
                             ThongBaoThanhCong("Chia sẻ hình ảnh thành công");
                         }
                     }

@@ -50,6 +50,7 @@ namespace FacebookAPI.Admin
                 bool result = fbapi.PostNotification(post_notification);
                 if (result)
                 {
+                    ClearData();
                     ThongBaoThanhCong("Gửi thông báo thành công");
                 }
                 else

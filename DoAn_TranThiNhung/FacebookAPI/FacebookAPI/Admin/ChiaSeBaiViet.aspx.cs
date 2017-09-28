@@ -49,6 +49,7 @@ namespace FacebookAPI.Admin
             bool response = fbapi.PostMessage(txtNoiDungCanChiaSe.Text, txtLinkChiaSe.Text, txtAnhChiaSe.Text, Session["token_extended"].ToString());
             if(response)
             {
+                ClearData();
                 ThongBaoThanhCong("Chia sẻ thành công");
             }
             else

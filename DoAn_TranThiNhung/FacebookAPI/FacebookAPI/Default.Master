@@ -33,19 +33,13 @@
     </div>
     <div class="collapse navbar-collapse" id="myNav">
     <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Trang chủ</a></li>
-    
-    <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chia sẻ <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-    <li class="active"><a href="ChiaSeBaiViet.aspx">Chia sẻ bài viết</a></li>
-    <li><a href="#">Chia sẻ ảnh</a></li>
-    </ul>
-    </li>
-    <li><a href="#">Lấy thông tin User trên Facebook</a></li>
-    <li><a href="#">Thông báo trên Facebook</a></li>
-    <li><a href="#">Giới thiệu</a></li>
-    <li><a href="#">Liên hệ</a></li>
+        <li id="default"><a href="Default.aspx">Trang chủ</a></li>
+        <li id="chiasebaiviet"><a href="ChiaSeBaiViet.aspx">Chia sẻ bài viết</a></li>
+        <li id="chiasehinhanh"><a href="ChiaSeHinhAnh.aspx">Chia sẻ ảnh</a></li>
+        <li id="laythongtinnguoidung"><a href="LayThongTinNguoiDung.aspx">Thông tin bạn bè</a></li>
+        <li id="guithongbao"><a href="GuiThongBao.aspx">Gửi thông báo</a></li>
+        <li id="about"><a href="About.aspx">Giới thiệu</a></li>
+        <li id="Contact"><a href="Contact.aspx">Liên hệ</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
     <li><a href="#" class="btn-link" class="btn-link" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> Đăng nhập</a></li>
@@ -54,37 +48,34 @@
     </div>   
     </nav>
     <!-- Modal -->
-    <div id="myModal" class="modal fade in" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal Content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                        &times</button>
-                    <h4 class="modal-title">
-                        Đăng nhập</h4>
-                </div>
-                <div class="modal-body">
-                    <div role="form">
-                        <div class="form-group">
-                            <asp:Label ID="Label1" runat="server" Text="Tên đăng nhập"></asp:Label>
-                            <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <asp:Label ID="Label2"  runat="server" Text="Mật khẩu"></asp:Label>
-                            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
-                        </div>
-                        <hr class="divider">
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <asp:CheckBox ID="chkRemberme" runat="server" Text="Nhớ mật khẩu" CssClass="checkbox-inline" />
-                                    |
-                                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="text-primary">Quên mật khẩu ?</asp:LinkButton>
-                                </div>
-                                <div class="col-sm-6">
-                                    <span class="pull-right">
-                                        <asp:Button ID="btnSumbit" CssClass="btn btn-success" runat="server" Text="Gửi" OnClick="btnSumbit_Click" /></span>
+        <div id="myModal" class="modal fade in" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal Content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times</button>
+                        <h4 class="modal-title">Đăng nhập</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div role="form">
+                            <div class="form-group">
+                                <asp:Label ID="Label1" runat="server" Text="App Id"></asp:Label>
+                                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:Label ID="Label2" runat="server" Text="App Secret"></asp:Label>
+                                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <hr class="divider">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <span class="pull-right">
+                                            <asp:Button ID="btnSumbit" CssClass="btn btn-success" runat="server" Text="Gửi" OnClick="btnSumbit_Click" /></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +83,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- Landing Page -->
     <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
     <!-- footer -->
     <footer id="footer">
@@ -171,6 +162,11 @@
     <!-- Script -->
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $('#<%= GetActive()%>').addClass("active");
+    </script>
+
     </form>
 </body>
 </html>
