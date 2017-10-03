@@ -113,5 +113,21 @@ namespace FacebookAPI.Models
             public List<Datum> data { get; set; }
             public Paging paging { get; set; }
         }
+
+        public class AccountAdmin
+        {
+            public string access_token { get; set; }
+            public string category { get; set; }
+            public string name { get; set; }
+            public string id { get; set; }
+            public List<string> perms { get; set; }
+            public List<CategoryList> category_list { get; set; }
+        }
+
+        public class ResultAccounts
+        {
+            public List<AccountAdmin> data { get; set; }
+            public Paging paging { get; set; }
+        }
     }
 }

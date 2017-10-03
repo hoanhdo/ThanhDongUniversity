@@ -262,6 +262,9 @@
                         <a id="chiasevideo" href="ChiaSeVideo.aspx"><i class="fa fa-bar-chart-o"></i> Chia sẻ Video</a>
                     </li>
                     <li>
+                        <a id="chiasetrenpage" href="ChiaSeTrenPage.aspx"><i class="fa fa-bar-chart-o"></i> Chia sẻ trên Fan Page</a>
+                    </li>
+                    <li>
                         <a id="laythongtinnguoidung" href="LayThongTinNguoiDung.aspx"><i class="fa fa-users"></i> Thông tin người dùng</a>
                     </li>
 
