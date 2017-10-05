@@ -77,5 +77,10 @@ namespace FacebookAPI.Admin
             txtLinkChiaSe.Text = "";
             txtNoiDungCanChiaSe.Text = "";
         }
+
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            ClearData();
+        }
     }
 }

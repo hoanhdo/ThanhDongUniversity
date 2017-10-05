@@ -74,7 +74,8 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <span class="pull-right">
-                                            <asp:Button ID="btnSumbit" CssClass="btn btn-success" runat="server" Text="Gửi" OnClick="btnSumbit_Click" /></span>
+                                             <asp:Button ID="btnClear" CssClass="btn btn-error" runat="server" Text="Xóa" OnClick="btnClear_Click" />
+                                            <asp:Button ID="btnSumbit" CssClass="btn btn-success" runat="server" Text="Đăng nhập" OnClick="btnSumbit_Click" /></span>
                                     </div>
                                 </div>
                             </div>

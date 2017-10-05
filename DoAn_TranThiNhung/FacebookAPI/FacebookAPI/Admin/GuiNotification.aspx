@@ -46,7 +46,7 @@
                                         </div>
 
                                         <asp:Button ID="btnGuiThongBao" runat="server" Text="Thông báo" CssClass="btn btn-primary" OnClick="btnGuiThongBao_Click" />
-                                        <asp:Button ID="btnReset" runat="server" Text="Xóa nội dung thông báo" CssClass="btn btn-danger" />
+                                        <asp:Button ID="btnReset" runat="server" Text="Xóa nội dung thông báo" CssClass="btn btn-danger" OnClick="btnReset_Click" />
                                     </form>
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->

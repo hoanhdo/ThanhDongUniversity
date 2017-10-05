@@ -102,5 +102,10 @@ namespace FacebookAPI.Admin
             txtMota.Text = "";
             txtPhotoLink.Text = "";
         }
+
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            ClearData();
+        }
     }
 }

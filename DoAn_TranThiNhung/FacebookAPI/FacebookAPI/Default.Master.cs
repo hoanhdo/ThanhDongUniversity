@@ -26,7 +26,7 @@ namespace FacebookAPI
                 client_id = txtUsername.Text,
                 redirect_uri = "http://" + Request.ServerVariables["SERVER_NAME"] + ":" + Request.ServerVariables["SERVER_PORT"] + "/admin/ThongKe.aspx",
                 response_type = "code",
-                scope = "publish_actions,user_friends,user_posts,read_custom_friendlists,pages_show_list,manage_pages" // Add other permissions as needed
+                scope = "publish_pages,user_friends,user_posts,read_custom_friendlists,pages_show_list,manage_pages" // Add other permissions as needed
             });
             Session["app_id"] = txtUsername.Text;
             Session["app_secret"] = txtPassword.Text;
@@ -41,6 +41,12 @@ namespace FacebookAPI
         public string GetActive()
         {
             return System.IO.Path.GetFileNameWithoutExtension(System.Web.HttpContext.Current.Request.Url.AbsolutePath).ToLower();
+        }
+
+        protected void btnClear_Click(object sender, EventArgs e)
+        {
+            txtUsername.Text = "";
+            txtPassword.Text = "";
         }
     }
 }

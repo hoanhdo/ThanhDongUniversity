@@ -50,7 +50,7 @@
                                         </div>
                                         <p></p>
                                         <asp:Button ID="btnChiaSeHinhAnh" runat="server" Text="Chia sẻ" CssClass="btn btn-primary" OnClick="btnChiaSeHinhAnh_Click" />
-                                        <asp:Button ID="btnReset" runat="server" Text="Xóa nội dụng chia sẻ" CssClass="btn btn-danger" />
+                                        <asp:Button ID="btnReset" runat="server" Text="Xóa nội dụng chia sẻ" CssClass="btn btn-danger" OnClick="btnReset_Click" />
                                     </form>
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->

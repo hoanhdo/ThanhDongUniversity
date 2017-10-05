@@ -92,5 +92,10 @@ namespace FacebookAPI.Admin
                 ThongBaoLoi("Chia sẻ video không thành công");
             }
         }
+
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            ClearData();
+        }
     }
 }

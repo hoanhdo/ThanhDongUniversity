@@ -82,5 +82,10 @@ namespace FacebookAPI.Admin
             txtLink.Text = "";
             txtNoiDungCanThongBao.Text = "";
         }
+
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            ClearData();
+        }
     }
 }
