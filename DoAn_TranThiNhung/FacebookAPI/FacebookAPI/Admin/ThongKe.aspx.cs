@@ -18,12 +18,36 @@ namespace FacebookAPI.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!Page.IsPostBack)
+            {
+                try
+                {
+                    FacebookClient client = new FacebookClient(Session["token_extended"].ToString());//tạo object facebook client
+                    dynamic resultTotalAdminPage = client.Get("me/accounts?fields=id&summary=total_count"); //
+                    string totalAdminPage = Convert.ToString(resultTotalAdminPage.summary.total_count);
+                    lblTotalPage.Text = totalAdminPage;
+
+                    dynamic resultTotalLike = client.Get("564582170347986/?fields=fan_count"); //
+                    string totalLike = Convert.ToString(resultTotalLike.fan_count);
+                    lblTotalLike.Text = totalLike;
+
+                    dynamic resultTotalFriends = client.Get("me/friends"); //
+                    string totalFriends = Convert.ToString(resultTotalFriends.summary.total_count);
+                    lblTotalFriends.Text = totalFriends;
+                }
+                catch (Exception)
+                {
+                    lblTotalPage.Text = "0";
+                    lblTotalLike.Text = "0";
+                    lblTotalFriends.Text = "0";
+                }
+            }
         }
 
         protected void Page_Init(object sender, EventArgs e)
         {
-           
+            
+
         }
 
         protected List<FacebookClass.User> GetFacebookUserData(string code)

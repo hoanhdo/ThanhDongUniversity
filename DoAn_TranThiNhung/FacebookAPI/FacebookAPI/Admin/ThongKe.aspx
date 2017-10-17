@@ -36,20 +36,22 @@
                                             <i class="fa fa-eye fa-5x"></i>
                                         </div>
                                         <div class="panel-right">
-								            <h3>123 &nbsp;</h3>
-                                           <strong> Số lượng bài viết chia sẻ</strong>
+								            <h3>
+                                                <asp:Label ID="lblTotalPage" runat="server" Text="Label"></asp:Label> &nbsp;</h3>
+                                           <strong> Số lượng Page hiện đang quản trị</strong>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-12 col-xs-12">
                                     <div class="panel panel-primary text-center no-boder blue">
                                           <div class="panel-left pull-left blue">
-                                            <i class="fa fa-bell fa-5x"></i>
+                                            <i class="fa fa-users fa-5x"></i>
 								            </div>
                                 
                                         <div class="panel-right">
-							            <h3>1234 &nbsp; </h3>
-                                           <strong> Số lượng thông báo gửi đi</strong>
+							            <h3>
+                                            <asp:Label ID="lblTotalLike" runat="server" Text="Label"></asp:Label> &nbsp; </h3>
+                                           <strong> Số lượng like của trang Page: Túi xinh rẻ đẹp chất lượng</strong>
 
                                         </div>
                                     </div>
@@ -57,12 +59,12 @@
                                 <div class="col-md-4 col-sm-12 col-xs-12">
                                     <div class="panel panel-primary text-center no-boder blue">
                                         <div class="panel-left pull-left blue">
-                                            <i class="fa fa-users fa-5x"></i>
+                                            <i class="fa fa-bell fa-5x"></i>
                                 
                                         </div>
                                         <div class="panel-right">
-							            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 234 &nbsp;&nbsp;&nbsp;&nbsp; </h3>
-                                        <strong>Người dùng  </strong>
+							            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="lblTotalFriends" runat="server" Text="Label"></asp:Label>  &nbsp;&nbsp;&nbsp;&nbsp; </h3>
+                                        <strong>Bạn bè  </strong>
 
                                         </div>
                                     </div>

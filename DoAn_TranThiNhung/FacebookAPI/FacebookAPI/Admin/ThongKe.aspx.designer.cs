@@ -11,5 +11,32 @@ namespace FacebookAPI.Admin {
     
     
     public partial class ThongKe {
+        
+        /// <summary>
+        /// lblTotalPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotalPage;
+        
+        /// <summary>
+        /// lblTotalLike control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotalLike;
+        
+        /// <summary>
+        /// lblTotalFriends control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotalFriends;
     }
 }
